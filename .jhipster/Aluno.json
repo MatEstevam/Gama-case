@@ -1,0 +1,27 @@
+{
+  "annotations": {
+    "changelogDate": "20250317124749"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Aluno",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "valor",
+      "otherEntityName": "meta",
+      "otherEntityRelationshipName": "aluno",
+      "relationshipName": "metas",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

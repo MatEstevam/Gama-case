@@ -1,0 +1,23 @@
+entity Aluno {
+  nome String required,
+  email String required unique
+}
+
+entity AreaDoEnem {
+  nome String required unique
+}
+
+entity Meta {
+  valor Integer required
+}
+
+relationship ManyToOne {
+  Meta to Aluno{metas},
+  Meta to AreaDoEnem{area}
+}
+
+
+dto Aluno, Meta with mapstruct
+
+service Aluno, Meta with serviceClass
+paginate Aluno, Meta with pagination

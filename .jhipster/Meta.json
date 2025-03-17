@@ -1,0 +1,32 @@
+{
+  "annotations": {
+    "changelogDate": "20250317124750"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "valor",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "area",
+      "fieldType": "AreaDoEnem",
+      "fieldValues": "LINGUAGENS_CODIGOS_E_SUAS_TECNOLOGIAS,MATEMATICA_E_SUAS_TECNOLOGIAS,CIENCIAS_DA_NATUREZA_E_SUAS_TECNOLOGIAS,CIENCIAS_HUMANAS_E_SUAS_TECNOLOGIAS"
+    }
+  ],
+  "name": "Meta",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "name",
+      "otherEntityName": "aluno",
+      "otherEntityRelationshipName": "metas",
+      "relationshipName": "aluno",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

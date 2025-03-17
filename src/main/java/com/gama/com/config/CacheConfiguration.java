@@ -41,6 +41,9 @@ public class CacheConfiguration {
             createCache(cm, com.gama.com.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.gama.com.repository.UserRepository.USERS_BY_EMAIL_CACHE);
             createCache(cm, com.gama.com.domain.Authority.class.getName());
+            createCache(cm, com.gama.com.domain.Aluno.class.getName());
+            createCache(cm, com.gama.com.domain.Aluno.class.getName() + ".metas");
+            createCache(cm, com.gama.com.domain.Meta.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
